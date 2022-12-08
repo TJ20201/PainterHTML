@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=0">
+		<title>PainterHTML</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div id="colourtools" style="display:inline-flex;float:left;background-color:grey;padding:5px 5px 5px 5px;flex-wrap:wrap;">
+			<div id="colours">
+		        <div id="favcoloursbtn">
+		        	<h4 style="color:white;margin-top:0px;margin-bottom:0px;">Pinned Colours</h4>
+		        </div>
+		        <hr>
+		    	<div id="coloursbtn"></div>
+		        <hr>
+		        <input type="color" id="colourpicker" style="width: 100%;" value="#ffffff">
+		        <button onclick="pencolor = document.getElementById('colourpicker').value;console.log(document.getElementById('colourpicker').value)">Choose</button>
+		        <button onclick="addFavColour()">Pin</button>
+		        <label for="penslider"style="color:white;">Pen Width:</label>
+		        <input type="range" id="penslider" min="5" max="35" value="5" style="width: 100%;margin-top:0px;padding-top:0px;" oninput="penwidth = document.getElementById('penslider').value">
+		        <hr>
+		        <div id="tools">
+		        	<button onclick="clearCanvas()" style="width:75px;height:25px">Clear</button>
+		            <button onclick="pentool = 'pen'" style="width:25px;height:25px;"><img src="https://clipart.world/wp-content/uploads/2021/07/Pen-clipart-transparent-background-6.png" style="width:12px;height:12px;filter:grayscale(1)"/></button>
+		        </div>
+		    </div>
+		</div>
+		<canvas id="draw" width="4096" height="4096" style="background: #000;">Your browser does not support the HTML5 canvas tag.</canvas>
+		<script src="canvas.js"></script>
+	</body>
+</html>

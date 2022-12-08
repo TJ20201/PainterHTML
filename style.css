@@ -1,0 +1,40 @@
+body {
+	background-color: #353535;
+	color: #ffffff;
+	font-family: arial;
+	min-width: 100dvw;
+	min-height: 100dvh;
+	overflow:hidden;
+	padding: 0px;
+	margin: 0px;
+}
+
+h1 {
+	width: 50dvw;
+	text-align: center;
+	left: 25dvw;
+}
+
+#colourtools {
+	height: 50%;
+	width: 100%;
+    overflow:scroll;
+}
+#colourtools button {
+	margin-right:2.5px;
+    margin-left:2.5px;
+}
+#coloursbtn button, #favcoloursbtn button {
+	border: 1px black dashed;
+    border-radius: 6px;
+}
+#coloursbtn button:hover, #favcoloursbtn button:hover {
+	border: 2px #222255 solid;
+    border-radius: 4px;
+}
+
+#draw {
+	width: 100%;
+	height: 75%;
+
+}
